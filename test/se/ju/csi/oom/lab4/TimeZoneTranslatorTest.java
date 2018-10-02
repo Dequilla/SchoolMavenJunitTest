@@ -41,7 +41,7 @@ public class TimeZoneTranslatorTest
 	@Test
 	public void testShiftEventTimeZone() 
 	{
-		System.out.println("Useless print.");
+		System.out.println("Useless print");
 		
 		Event event = new Event(
 				new String("My Birthday"), 
