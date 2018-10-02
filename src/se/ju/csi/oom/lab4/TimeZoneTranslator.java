@@ -52,8 +52,6 @@ public class TimeZoneTranslator {
 			}
 		}
 		
-		
-		
 		DateTime targetDateTime = new DateTime(
 				year,
 				month,
