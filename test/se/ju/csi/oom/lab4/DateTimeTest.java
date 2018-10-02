@@ -16,14 +16,14 @@ public class DateTimeTest {
 	public void testToString() {
 		DateTime dateTime = new DateTime(2018, 9, 10, 20, 0, 0);
 		
-		Assert.assertEquals(new String("2018-09-10 20:00:00"), dateTime.toString());
+		Assert.assertEquals(new String("2018-09-10 20:00"), dateTime.toString());
 	}
 
 	@Test
 	public void testDateTimeString() {
 		DateTime dateTime = new DateTime("2018-09-10 20:00:00");
 		
-		Assert.assertEquals(new String("2018-09-10 20:00:00"), dateTime.toString());
+		Assert.assertEquals(new String("2018-09-10 20:00"), dateTime.toString());
 	}
 
 }

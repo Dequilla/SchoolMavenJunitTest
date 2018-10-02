@@ -25,7 +25,7 @@ public class TimeZoneTranslatorTest
 		
 		dateTime = TimeZoneTranslator.shiftTimeZone(dateTime, TimeZone.JAPAN.getOffset(), TimeZone.SINGAPORE.getOffset());
 		
-		Assert.assertEquals(new String("2001-09-10 12:37:37"), dateTime.toString());
+		Assert.assertEquals(new String("2001-09-10 12:37"), dateTime.toString());
 	}
 	
 	@Test
@@ -35,7 +35,7 @@ public class TimeZoneTranslatorTest
 		
 		dateTime = TimeZoneTranslator.shiftTimeZone(dateTime, TimeZone.CENTRAL_EUROPEAN_TIME.getOffset(), TimeZone.US_PACIFIC.getOffset());
 		
-		Assert.assertEquals(new String("2015-12-31 21:00:00"), dateTime.toString());
+		Assert.assertEquals(new String("2015-12-31 21:00"), dateTime.toString());
 	}
 
 	@Test
@@ -51,7 +51,7 @@ public class TimeZoneTranslatorTest
 		
 		event = TimeZoneTranslator.shiftEventTimeZone(event, TimeZone.HAWAII, TimeZone.JAPAN);
 		
-		Assert.assertEquals(new String("2018-09-10 20:00:00"), event.getStartDate().toString());
-		Assert.assertEquals(new String("2018-09-11 20:00:00"), event.getEndDate().toString());
+		Assert.assertEquals(new String("2018-09-10 20:00"), event.getStartDate().toString());
+		Assert.assertEquals(new String("2018-09-11 20:00"), event.getEndDate().toString());
 	}
 }
