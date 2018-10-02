@@ -41,6 +41,8 @@ public class TimeZoneTranslatorTest
 	@Test
 	public void testShiftEventTimeZone() 
 	{
+		System.out.println("Useless print.");
+		
 		Event event = new Event(
 				new String("My Birthday"), 
 				new DateTime(2018, 9, 10, 1, 0, 0), 
